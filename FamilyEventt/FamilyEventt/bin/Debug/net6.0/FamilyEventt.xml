@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FamilyEventt</name>
+    </assembly>
+    <members>
+        <member name="M:FamilyEventt.Controllers.AccountController.DeleteStaffById(System.String)">
+            <summary>
+            Id Staff
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.AccountController.DeleteStaff(System.String)">
+            <summary>
+            User Name
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.BookingController.GetAllDateTimeLocation">
+            <summary>
+            View list information location
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.BookingController.GetDateTimeLocationByEventBooker(System.String)">
+            <summary>
+            View history booking eventbooker
+            </summary>
+            <param name="eventbooerID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.BookingController.CheckUsedRoomByDay(System.DateTime)">
+            <summary>
+            check room booked
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.BookingController.CheckEmptyRoomByDay(System.DateTime)">
+            <summary>
+            Check room empty 
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.DrinkController.UpdateDrink(FamilyEventt.Dto.FoodDto)">
+            <summary>
+            Update drink with DrinkID
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentController.GetByIdEntertainments(System.String)">
+            <summary>
+            search by id Entertainment
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentController.UpdateEntertainment(FamilyEventt.Dto.EntertainmentDto)">
+            <summary>
+            Update by id for entertainment
+            </summary>
+            <param name="upEntertainment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentController.DeleteEntertainment(System.String[])">
+            <summary>
+            delete list entertainment by id 
+            </summary>
+            <param name="EntertainmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentProductController.GetByIdEntertainmentProducts(System.String,System.String)">
+            <summary>
+            entertainmentProductId = ProductId. || 
+            entertainmentId = EntertainmentId.
+            </summary>
+            <param name="entertainmentProductId"></param>
+            <param name="entertainmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentProductController.InsertEntertainmentProduct(FamilyEventt.Dto.EntertainmentProductDto)">
+            <summary>
+            ProductId: auto generate ID. || 
+            EntertainmentId, ShowId, GameId: id follow table Entertainment, Show, Game.
+            </summary>
+            <param name="entertainmentProduct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentProductController.UpdateEntertainmentProduct(FamilyEventt.Dto.EntertainmentProductDto)">
+            <summary>
+            Enter ProductId you need to update
+            </summary>
+            <param name="upEntertainmentProduct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EntertainmentProductController.DeleteEntertainmentProduct(System.String[])">
+            <summary>
+            Delete entertainment product by id || 
+            entertainmentProductId = ProductId
+            </summary>
+            <param name="entertainmentProductId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EventController.GetProductDecordationByEventId(System.String)">
+            <summary>
+            Id Decoration
+            </summary>
+            <param name="eventid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EventController.GetMenuByEventId(System.String)">
+            <summary>
+            ID menu
+            </summary>
+            <param name="eventid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EventController.GetEntertainmentByEvent(System.String)">
+            <summary>
+            Entertainment ID
+            </summary>
+            <param name="eventid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.EventController.GetEventByID(System.String)">
+            <summary>
+            Id event
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.FireBaseController.TestSendMessage(FamilyEventt.Services.FirebaseService)">
+            <summary>
+            Send notification many number Phone
+            </summary>
+            <param name="firebaseService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.NotificationController.CreateNotification(System.String,System.Int32)">
+            <summary>
+            truyền vào id event
+            type 0: tạo sự kiện thành công
+            type 1: thanh toán thành công
+            type 2: hủy đặt lịch thành công
+            type 3: hoàn tiền thành công
+            </summary>
+            <param name="eventID"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.NotificationController.CreateNotificationFamily(System.String,System.Int32)">
+            <summary>
+            truyền vào id event
+            type 0: sắp tới có sự kiện nào
+            type 1: được mời tới sự kiện nào
+            </summary>
+            <param name="eventbooker"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.PaymentStatisticalController.GetDataStatistical">
+            <summary>
+            </summary>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.PaymentStatisticalController.GetDataStatisticalEventID(System.String)">
+            <summary>
+            xem thống kê của event đó
+            </summary>
+            <param name="eventid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.PaymentStatisticalController.GetDataStatisticalEventBookerID(System.String)">
+            <summary>
+            xem thống kê các event của booker
+            </summary>
+            <param name="eventbookerid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.PaymentStatisticalController.GetDataStatisticalFE(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            type 0: xem thống kê doanh thu theo khoảng thời gian
+            type 1: xem tổng doanh thu của toàn hệ thống, không tinh theo thời gian
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.RoomLocationController.DeleteRoom(System.String)">
+            <summary>
+            Delete room by ID
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.StatisticalController.GetDataStatistical(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Thống kê theo loại :
+            0. Thống kê số lượng event theo thời gian 
+            1. Thống kê số lượng người dùng
+            2. Thống kê loại event được book 
+            3. Thống kê đồ ăn được book
+            4. Thống kê vật phẩm trang trí được order
+            5. Thống kê phòng được sử dụng
+            6. Thống kê số lượng loại sự kiện được book theo thời gian
+            7. Thống kê doanh thu theo khoảng thời gian
+            </summary>
+            <param name="type"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns>
+            count: số lượng đếm theo yêu cầu 
+            StartDate: ngày bắt đầu
+            EndDate: ngày kết thúc
+            StatisticalID : ID object or name object được thống kê
+            TotalPrice: tổng tiền (đang update)
+            </returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.TwilioController.VerifyOtp(System.String,System.String)">
+            <summary>
+            true: account chưa có
+            false: account đã có rồi
+            </summary>
+            <param name="phoneNumber"></param>
+            <param name="otp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Controllers.VNPayController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,FamilyEventt.Models.FamilyEventContext)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:FamilyEventt.Controllers.VNPayController.Get(System.String,System.String)">
+            <summary>
+            [Guest] Endpoint for company create url payment with condition
+            </summary>
+            <returns>List of user</returns>
+            <response code="200">Returns the list of user</response>
+            <response code="204">Returns if list of user is empty</response>
+            <response code="403">Return if token is access denied</response>
+        </member>
+        <member name="M:FamilyEventt.Controllers.VNPayController.Confirm">
+            <summary>
+            [Guest] Endpoint for company confirm payment with condition
+            </summary>
+            <returns>List of user</returns>
+            <response code="200">Returns the list of user</response>
+            <response code="204">Returns if list of user is empty</response>
+            <response code="403">Return if token is access denied</response>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.GetAllDecoration">
+            <summary>
+            Get all decoration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.GetDecorationById(System.String)">
+            <summary>
+            Get decoration by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.FilterDecorationByManyOption(System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Filter decoration by many options
+            </summary>
+            <param name="name"></param>
+            <param name="minPrice"></param>
+            <param name="maxPrice"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.AddDecoration(FamilyEventt.Dto.DecorationDto)">
+            <summary>
+            Add a decoration
+            </summary>
+            <param name="decoration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.UpdateDecoration(FamilyEventt.Dto.DecorationDto)">
+            <summary>
+            Update a decoration
+            </summary>
+            <param name="decorationDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecoration.DeleteDecorationById(System.Collections.Generic.List{System.String})">
+            <summary>
+            Deleted a range of decoration
+            </summary>
+            <param name="decorationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.GetAllDecorationProduct">
+            <summary>
+            Get all DecorationProduct
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.GetDecorationProductById(System.String,System.String)">
+            <summary>
+            Get decorationProduct by Id
+            </summary>
+            <param name="decorationId"></param>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.FilterDecorationProducts(System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Boolean})">
+            <summary>
+            Get decorationProduct by many filter options
+            </summary>
+            <param name="decorationID"></param>
+            <param name="productId"></param>
+            <param name="minPrice"></param>
+            <param name="maxPrice"></param>
+            <param name="quantity"></param>
+            <param name="quantityOption"> 
+            if quantityOption then get equall and higher; else get equal and lower
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.AddDecorationProduct(FamilyEventt.Dto.DecorationProductDto)">
+            <summary>
+            Add a decorationProduct
+            </summary>
+            <param name="decorationProduct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.UpdateDecorationProduct(FamilyEventt.Dto.DecorationProductDto)">
+            <summary>
+            Update a decorationProduct
+            </summary>
+            <param name="decorationProduct"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FamilyEventt.Interfaces.IDecorationProduct.DeleteDecorationProductById(System.Collections.Generic.List{System.String})">
+            <summary>
+            Delete a range of decorationProduct
+            </summary>
+            <param name="decorationProductId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
